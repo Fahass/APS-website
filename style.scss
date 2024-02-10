@@ -21,7 +21,8 @@ nav{
        justify-content: space-between;
        z-index: 100;
        @media(max-width: 600px){
-            padding-left: 2rem;
+           margin-bottom: 2rem;
+           padding-left: 2rem;
        }
        .logo{
            z-index: 1;
@@ -113,6 +114,7 @@ nav{
 
 .home{
     height: 100dvh;
+    width: 100%;
     background: url(./Images/hero-img.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -123,6 +125,7 @@ nav{
     align-items: center;
     justify-content: center;
     padding-top: 3rem;
+    object-fit: cover;
     .overlay{
         background: #fce4e480;
         height: 100dvh;
@@ -140,6 +143,7 @@ nav{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 3rem;
         h1{
             font-size: 3.5rem;
             margin-bottom: 1rem;
@@ -157,6 +161,9 @@ nav{
             -webkit-background-clip: text;
             background-clip: text;
             text-shadow: -1px -1px 1px;
+            @media(max-width: 540px){
+                margin-bottom: .5rem;
+            }
             @media(max-width: 360px){
                 font-size: 1rem;
             }
@@ -174,6 +181,10 @@ nav{
             transition: .4s ease;
             &:hover{
                 background: #fdc8c8;
+            }
+            @media(max-width: 540px){
+                margin-top: 1.5rem;
+                padding: .5rem 2rem;
             }
             @media(max-width: 360px){
                 padding: .5rem 2rem;
@@ -193,8 +204,14 @@ nav{
     align-items: center;
     text-align: center;
     @media(max-width: 780px){
-        height: auto;
+        height: 80dvh;
         padding: 5rem 2rem 3rem 2rem;
+    }
+    @media(max-width: 560px){
+        height: 100dvh;
+    }
+    @media(max-width: 360px){
+        height: auto;
     }
     h1{
         margin-bottom: 2rem;
