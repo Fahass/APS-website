@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APS</title>
+    <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!------ Navigation Bar ----->
+
+    <nav>
+        <div class="logo">
+            <a href="#">Ahmad Photo<br>Studio</a>
+        </div>
+        <div class="nav-links">
+            <ul class="dropDown">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <span id="bar-one"></span>
+            <span id="bar-two"></span>
+            <span id="bar-three"></span>
+        </div>
+    </nav>
+
+    <!------ Home Page ----->
+
+    <main class="home" id="home">
+        <div class="overlay"></div>
+        <section class="text-box">
+            <h1>Ahmad Photo Studio</h1>
+            <p>Your Number one Photographer for all events</p>
+            <a href="#about">About Us</a>
+        </section>
+    </main>
+
+
+    <!------ About Section ----->
+
+    <section class="about" id="about">
+        <h1>About Us</h1>
+        <p>Ahmad Photo Studio is a reputable photography studio located at Janbulo first gate Kano, that uses a variety of modern photographic equipment to capture events, people, objects or scenes for records, arts or commercial use. <br> Here at APS, we strive to deliver exceptional quality and creativity in every shot. Whether it's a wedding, family portrait, or corporate event, we are committed to providing a personalized and professional experience that exceeds your expectations. Trust us to transform your special moments into stunning visual stories that will be treasured for generations to come..</p>
+    </section>
+
+    <!------ Services Section ----->
+
+    <section class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="cards">
+            <div class="card">
+                <i class="fa fa-camera-retro"></i>
+                <h2>Wedding Pictures</h2>
+                <p>Your wedding day is a once-in-a-lifetime event, and our photography studio is dedicated to capturing every cherished moment.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-camera-retro"></i>
+                <h2>Birthday Party Pictures</h2>
+                <p>Celebrate your special moments with our photography services tailored for birthday parties.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-camera-retro"></i>
+                <h2>Home Pictures</h2>
+                <p>Our photography studio specializes in capturing those precious family moments and turning them into those expertly crafted pictures.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-camera-retro"></i>
+                <h2>Studio Pictures</h2>
+                <p>At our photography studio, we offer professional studio sessions that guarantee stunning pictures.</p>
+            </div>
+        </div>
+    </section>
+
+    <!------ Gallery Section ----->
+
+    <section class="gallery" id="gallery">
+        <h1>Gallery</h1>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" effect="cards">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./Images/img-10.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-9.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-7.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-6.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-13.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-14.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-15.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-17.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-18.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-4.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-2.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-1.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-5.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-16.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-12.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-8.jpg" alt="gallery-picture"></div>
+                <div class="swiper-slide"><img src="./Images/img-3.jpg" alt="gallery-picture"></div>
+            </div>
+                <!-- If we need pagination -->
+            <div class="swiper-pagination" pagination-dynamic-bullets="true"></div>
+        
+                <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <!------ Contact Section ----->
+
+    <section class="contact" id="contact">
+        <h1>Contact</h1>
+        <div class="sub-class">
+            <div class="form-container">
+                <form action="https://formsubmit.co/ahmedphotostudio.aps@outlook.com" method="POST">
+                    <input type="text" name="name" placeholder="Enter your fullname" required>
+                    <input type="email" name="email" placeholder="Enter your Email" required>
+                    <textarea name="message" id="message" placeholder="Message"></textarea required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15611.688879064423!2d8.4733196!3d11.9798838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae7f9f3533d7fb%3A0x26340219b8fd36ff!2sAHMAD%20PHOTO%20STUDIO%20-%20APS!5e0!3m2!1sen!2sng!4v1707223244745!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!------ Footer ----->
+
+    <footer>
+        <div class="top-layer">
+            <div class="social">
+                <a href="https://instagram.com/ahmadphotostudio.aps"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com/ahmadphotostudio.aps"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/ahmadphotostudi"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://wa.link/dts6lv"><i class="fa-brands fa-square-whatsapp"></i></a>
+            </div>
+            <div class="address">
+                <i class="fa fa-location-dot"></i>
+                <span>No. 29 Janbulo first gate, Kabuga Housing Estate Kano.</span>
+            </div>
+            <div class="Tel">
+                <i class="fa fa-phone"></i>
+                <span>+234-80-3434-4805<br>+234-70-2668-2668</span>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom-layer">
+            <p>&copy; Ahmad Photo Studio 2024</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
