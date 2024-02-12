@@ -85,7 +85,7 @@ nav .nav-links ul a:focus, nav .nav-links ul a:hover {
   border-bottom: 2px solid #fdc8c0;
 }
 nav .nav-links .active {
-  top: 67px;
+  top: 70px;
   height: 50dvh;
 }
 nav .hamburger {
