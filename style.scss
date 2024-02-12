@@ -37,8 +37,7 @@ nav{
                 font-weight: 600;
                 text-decoration: none;
                 font-size: 1.2rem;
-                color: #e64343;
-                text-shadow:1px 4px 3px #c9c7c7;
+                color: #000;
             }
        }
         .nav-links{
@@ -149,12 +148,13 @@ nav{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 3rem;
+        margin-top: 5.5rem;
         height: 100%;
         h1{
             font-size: 3.5rem;
             margin: 1rem 0;
-            text-shadow: 2px -2px 3px;
+            color: #e64343;
+            text-shadow: 2px -2px 3px #fff;
             @media(max-width: 480px){
                 font-size: 3rem;
             }
@@ -167,7 +167,8 @@ nav{
             margin-bottom: 1rem;
             -webkit-background-clip: text;
             background-clip: text;
-            text-shadow: -1px -1px 1px;
+            color: #490707;
+            text-shadow: -1px 2px 0px #ffe8e8;
             @media(max-width: 540px){
                 margin-bottom: .5rem;
             }
