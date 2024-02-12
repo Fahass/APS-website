@@ -5,9 +5,9 @@
   scroll-behavior: smooth;
   scroll-padding-top: 2.5rem;
   font-family: "Poppins", "pt-sans";
-  -webkit-user-select: text;
-     -moz-user-select: text;
-          user-select: text;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 nav {
@@ -17,12 +17,23 @@ nav {
   padding: 0 3rem;
   position: fixed;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   z-index: 100;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (max-width: 900px) {
+  nav {
+    height: auto;
+    padding: 0.7rem 3rem;
+  }
 }
 @media (max-width: 600px) {
   nav {
+    margin-bottom: 2rem;
     padding-left: 2rem;
   }
 }
@@ -34,7 +45,8 @@ nav .logo a {
   font-weight: 600;
   text-decoration: none;
   font-size: 1.2rem;
-  color: #000;
+  color: #e64343;
+  text-shadow: 1px 4px 3px #c9c7c7;
 }
 nav .nav-links ul {
   list-style: none;
@@ -50,7 +62,7 @@ nav .nav-links ul {
     right: 0.5px;
     background: rgba(255, 255, 255, 0.9450980392);
     width: 100%;
-    align-items: start;
+    align-items: end;
     padding: 2rem 3rem;
     box-shadow: 5px 2px 14px 1px rgba(20, 20, 20, 0.6509803922);
     transition: ease 0.5s;
@@ -73,13 +85,13 @@ nav .nav-links ul a:focus, nav .nav-links ul a:hover {
   border-bottom: 2px solid #fdc8c0;
 }
 nav .nav-links .active {
-  top: 82px;
+  top: 67px;
   height: 50dvh;
 }
 nav .hamburger {
   position: absolute;
   top: 3;
-  right: 5%;
+  left: 5%;
   height: 25px;
   width: 30px;
   display: flex;
@@ -117,18 +129,21 @@ nav .hamburger #bar-three.transform {
 
 .home {
   height: 100dvh;
+  width: 100%;
   background: url(./Images/hero-img.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
+  background-clip: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 3rem;
 }
 .home .overlay {
   background: rgba(252, 228, 228, 0.5019607843);
-  height: 100dvh;
+  height: 100%;
   width: 100%;
   position: absolute;
   -o-object-fit: cover;
@@ -140,12 +155,16 @@ nav .hamburger #bar-three.transform {
 .home .text-box {
   z-index: 1;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  height: 100%;
 }
 .home .text-box h1 {
   font-size: 3.5rem;
-  margin-bottom: 1rem;
-  -webkit-background-clip: text;
-  background-clip: text;
+  margin: 1rem 0;
   text-shadow: 2px -2px 3px;
 }
 @media (max-width: 480px) {
@@ -160,10 +179,15 @@ nav .hamburger #bar-three.transform {
 }
 .home .text-box p {
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: -1px -1px 1px;
+}
+@media (max-width: 540px) {
+  .home .text-box p {
+    margin-bottom: 0.5rem;
+  }
 }
 @media (max-width: 360px) {
   .home .text-box p {
@@ -179,11 +203,17 @@ nav .hamburger #bar-three.transform {
   padding: 0.7rem 2rem;
   border: 1px solid #fdc8c0;
   border-radius: 0.5rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   transition: 0.4s ease;
 }
 .home .text-box a:hover {
   background: #fdc8c8;
+}
+@media (max-width: 540px) {
+  .home .text-box a {
+    margin-top: 1.5rem;
+    padding: 0.5rem 2rem;
+  }
 }
 @media (max-width: 360px) {
   .home .text-box a {
@@ -202,8 +232,18 @@ nav .hamburger #bar-three.transform {
 }
 @media (max-width: 780px) {
   .about {
-    height: auto;
+    height: 80dvh;
     padding: 5rem 2rem 3rem 2rem;
+  }
+}
+@media (max-width: 560px) {
+  .about {
+    height: 100dvh;
+  }
+}
+@media (max-width: 360px) {
+  .about {
+    height: auto;
   }
 }
 .about h1 {
@@ -336,13 +376,18 @@ nav .hamburger #bar-three.transform {
   justify-content: center;
 }
 .gallery .swiper .swiper-wrapper .swiper-slide img {
-  height: 350px;
-  width: 380px;
+  height: 380px;
+  width: 360px;
   margin: 0;
 }
 @media (max-width: 600px) {
   .gallery .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .gallery .swiper .swiper-wrapper .swiper-slide img {
+    height: 360px;
   }
 }
 .gallery .swiper .swiper-pagination span {
