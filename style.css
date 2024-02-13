@@ -389,6 +389,7 @@ nav .hamburger #bar-three.transform {
 @media (max-width: 480px) {
   .gallery .swiper .swiper-wrapper .swiper-slide img {
     height: 360px;
+    width: 320px;
   }
 }
 .gallery .swiper .swiper-pagination span {
